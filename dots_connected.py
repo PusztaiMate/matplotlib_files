@@ -8,7 +8,6 @@ x = [1, 2, 3]
 y = [10, 17, 8]
 err = [0.3, 1.2, 0.4]
 
-x2 = [1, 2, 3]
 y2 = [1, .3, 1.3]
 err2 = [0.03, 0.01, 0.04]
 
@@ -26,7 +25,7 @@ ax_left.errorbar(x, y,
 ax_left.set_ylabel('Szakítószilárdság')
 
 plt.ylim(0, 2)
-ax_right.errorbar(x2, y2,
+ax_right.errorbar(x, y2,
                  yerr=err2,
                  linestyle=(1, (5, 10)),
                  marker='D',
